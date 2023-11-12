@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+  background-repeat: no-repeat;
+  font-family: "Sarala", sans-serif;
+  width: 100vw;
+}
+
+header {
+  grid-area: header;
+  background: #575555;
+  height: 4em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #f1f0f0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  grid-area: nav;
+  color: #d1cece;
+  height: 100%;
+  width: 100%;
+  margin-top: 2em;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  width: 100%;
+  height: 100%;
+  margin-top: 2em;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 1em;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+
+.cards:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0.3em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  background-color: #fbfcfb;
+  height: 3em;
+  margin-top: 3em;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main main"
+    "footer footer footer";
+}
+.categoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em 1em;
+  list-style: none;
+  margin-top: 1em;
+}
+.indice {
+  text-align: center;
+}
+.contenido-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.my-button {
+  margin-top: 1em;
+  padding: 10px 20px;
+  background-color: #035068dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: #45a049;
+}
+
+.my-button:active {
+  background-color: #3e8e41;
+}
